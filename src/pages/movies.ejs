@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="por-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/styles/catalogo.css">
+    <title>Filmes</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <h1><a>Poggers<contrast id="flix">Flix</contrast></a></h1>
+            <div class="links">
+                <a href="../pages/home.html" class="pages">Início</a>
+                <a href="../pages/poster.html" id="current">Filmes</a>
+                <a href="../pages/series.html" class="pages">Séries</a>
+                <a href="../pages/favorits.html" class="pages">Favoritos</a>
+            </div>
+            <div class="right">
+                <div class="searchBar">
+                    <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user">
+                    <img
+                        src="https://gclabels.net/image/cache/data/new/inv/new/Blank-White-Square-Labels-s1w-600x600.png">
+                </div>
+            </div>
+        </nav>
+        <nav id="menu">
+            <h1><a>Poggers<contrast id="flix">Flix</contrast></a></h1>
+            <button onclick="showNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="navContent" style="display: none;">
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Favoritos</a>
+                <input type="text" id="searchBar">
+            </div>
+        </nav>
+    </header>
+
+    <form action="" id="prefe">
+        <fieldset id="preferences">
+            <label for="order">Ordenar por</label>
+            <select name="order" id="order">
+                <option value="a-z" id="a-z">A-Z</option>
+                <option value="z-a" id="z-a">Z-A</option>
+                <option value="recent" id="recent">Mais recente</option>
+                <option value="older" id="older">Mais antigo</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <div id="#span"></div>
+
+    
+
+    <section id="list">
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+
+        <div class="movies">
+            <a href="#">
+
+                <img src="https://m.media-amazon.com/images/I/71lqDylcvGL.jpg"
+                class="poster">
+    
+                <div class="information" style="background: url(https://sm.ign.com/ign_br/news/c/christophe/christopher-nolan-says-oppenheimer-is-kind-of-a-horror-movie_twcz.jpg);">
+
+                    <p class="movieTitle">Openheineken</p>
+    
+                    <div class="specify">
+                        <p class="duration">3h50min</p>
+                        <p class="rate">8.6</p>
+                        <p class="age">18</p>
+                        <p class="year">2023</p>
+                    </div>
+    
+                    <p class="sinopse">
+                        &nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloribus quia. Nemo estvoluptates eius perspiciatis rem recusandae porro delectus, minima nobis vel non quas aliquid nulla neque dolores.
+                    </p>
+    
+                </div>
+    
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
