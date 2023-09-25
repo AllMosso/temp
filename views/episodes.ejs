@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= (typeof title !="undefined" ? title : "" ) %>
+    </title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+        }
+
+        :root {
+            --backgound-scheme: #0F0F0F, #191919;
+            --detail-color: red;
+            --text-color: white;
+        }
+
+        fieldset {
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        input,
+        select {
+            padding: .6rem;
+            text-align: left;
+        }
+
+        #btnSend {
+            margin-top: 2rem;
+            background-color: var(--detail-color);
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: large;
+            text-align: center;
+            border: 0;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        body {
+            background-image: radial-gradient(60% 50%, var(--backgound-scheme));
+            color: var(--text-color);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset,
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 90%;
+            border: 0;
+            margin: 0 auto;
+        }
+
+        hr {
+            width: 70%;
+            margin: 2rem auto;
+            border: 2px solid var(--detail-color);
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Adicionar conteúdos</h1>
+
+        <hr>
+
+        <fieldset>
+            <form id="adminForm" action="/epManager" method="post">
+                <label for="movieID">ID do filme:</label>
+                <input type="text" name="movieID" id="movieID" required>
+                <label for="epName">Nome do episódio:</label>
+                <input type="text" name="epName" id="epName" required>
+                <label for="epURL">URL:</label>
+                <input type="text" name="epURL" id="epURL" required>
+                <label for="epThumbnail">Thumbnail:</label>
+                <input type="text" id="epThumbnail" name="epThumbnail" required>
+                <input type="submit" placeholder="Enviar" id="btnSend">
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>
